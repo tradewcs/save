@@ -15,7 +15,7 @@ function venv_prompt() {
 }
 
 setopt PROMPT_SUBST
-PROMPT='$(venv_prompt) [%F{yellow}%~%f%F{yellow}%f] ${vcs_info_msg_0_} >> '
+PROMPT='$(venv_prompt) { %F{green}%~%f%F{green}%f } ${vcs_info_msg_0_} ♏ '
 
 
 # promptinit
@@ -67,7 +67,7 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 alias reconnect_kb="~/scripts/reconnect_keyboard.sh"
 
-alias fastfetch="fastfetch -l TempleOS --logo-padding-left 3 --logo-padding-top 3"
+alias fastfetch="fastfetch -l Sulin --logo-padding-left 3 --logo-padding-top 3"
 
 export PATH="$HOME/.local/share/gem/ruby/3.2.0/bin:$PATH"
 export GEM_HOME="$HOME/.local/share/gem/ruby/3.2.0"
