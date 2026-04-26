@@ -1,1 +1,1 @@
-This is saved config files of tradewcs -_-
+Those are saved config files of tradewcs -_-
