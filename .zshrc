@@ -4,8 +4,8 @@ alias la='ls -lah'
 # Set up the prompt
 
 # autoload -Uz promptinit
-autoload -Uz vcs_info
-precmd() { vcs_info }
+# autoload -Uz vcs_info
+# precmd() { vcs_info }
 
 zstyle ':vcs_info:git:*' formats '(%b)'
 zstyle ':vcs_info:*' enable git
@@ -15,7 +15,7 @@ function venv_prompt() {
 }
 
 setopt PROMPT_SUBST
-PROMPT='$(venv_prompt) { %F{green}%~%f%F{green}%f } ${vcs_info_msg_0_} ♏ '
+PROMPT='$(venv_prompt) [ %F{green}%~%f%F{green}%f } ${vcs_info_msg_0_} => '
 
 
 # promptinit
