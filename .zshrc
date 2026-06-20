@@ -37,7 +37,7 @@ bindkey -M viins '^P' up-line-or-history
 bindkey -M viins '^N' down-line-or-history
 
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
-HISTSIZE=1000
+HISTSIZE=500
 SAVEHIST=1000
 HISTFILE=~/.zsh_history
 
